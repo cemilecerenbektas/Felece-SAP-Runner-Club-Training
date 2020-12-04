@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=1.0;">
+	<meta name="description" content="my-web-page">
+	<meta name="author" content="cemile-ceren-bektaş">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<title>My Website </title>
+
+	<!-- Plugin CSS -->
+	<link href="Ccb.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/Ccb.css" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.topnav {
+			overflow: hidden;
+			background-color: rgb(130, 145, 214);
+		}
+
+		.topnav a {
+			float: left;
+			display: block;
+			color: #0a3a72;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		.topnav a:hover {
+			background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: rgb(68, 68, 161);
+			color: white;
+		}
+
+		.topnav .icon {
+			display: none;
+		}
+
+		@media screen and (max-width: 600px) {
+			.topnav a:not(:first-child) {
+				display: none;
+			}
+
+			.topnav a.icon {
+				float: right;
+				display: block;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.topnav.responsive {
+				position: relative;
+			}
+
+			.topnav.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+
+			.topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+
+		}
+
+		h1 {
+			font-size: medium;
+			text-align: center;
+			color: rgb(34, 46, 112);
+
+		}
+
+		h2 {
+			color: rgb(20, 31, 77);
+			text-align: center;
+		}
+
+		h3 {
+			font-size: medium;
+			text-align: center;
+			color: rgb(34, 46, 112);
+		}
+
+		h4 {
+			font-size: medium;
+			text-align: center;
+			color: rgb(34, 46, 112);
+
+		}
+
+		.button {
+			display: inline-block;
+			border-radius: 2px;
+			background-color: #2a69b1;
+			border: rgb(34, 46, 112);
+			color: #FFFFFF;
+			text-align: center;
+			font-size: 20px;
+			padding: 20px;
+			width: 200px;
+			transition: all 0.5s;
+			cursor: pointer;
+			margin: 4px;
+		}
+
+		.button span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+
+		.button span:after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+
+		.button:hover span {
+			padding-right: 25px;
+		}
+
+		.button:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+
+		}
+
+		input[type=text],
+		select,
+		textarea {
+			width: 100%;
+			padding: 12px;
+			border: 2px solid rgb(18, 49, 116);
+			border-radius: 4px;
+			resize: vertical;
+		}
+
+		label {
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+
+		input[type=submit] {
+			background-color: #26456e;
+			color: white;
+			padding: 12px 20px;
+			border: navy;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+
+		.col-33 {
+			float: left;
+			width: 33%;
+			margin-top: 6px;
+			margin-bottom: 6px;
+		}
+
+		
+
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			background-color: rgb(156, 160, 212);
+		}
+
+		.contact {
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin: 20px;
+                border-radius: 50%;
+            }
+		.fa-instagram {
+                background: #125688;
+                color: white;
+
+            }
+			
+	</style>
+
+
+</head>
+
+<body id="page-top">
+
+	<!-- Navigation -->
+	<div class="topnav" id="myTopnav">
+		<a href="#name" class="active">Cemile Ceren Bektas</a>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<a href="#about">About</a>
+			<a href="#project">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
+	</div>
+
+	<!-- Profile Header -->
+	<header class="masthead text-center text-white d-flex">
+		<div class="container my-auto">
+			<div class="row">
+				<div class="col-lg-10 mx-auto">
+					<img src="ccb.jpg" style="width: 30%; height: 30%;">
+					<h1 class="text-uppercase">
+						<b>
+							<h1>Cemile Ceren Bektas </h1>
+						</b>
+						<br>
+						<b><a> Eskişehir Technical University Computer Engineering Student </a></b>
+						<br><br>
+						<a class="button" style="vertical-align:middle" target="_blank"href="https://www.linkedin.com/in/cemile-ceren-bektaş/">Go to my Linkedin profile</a>
+					</h1>
+				</div>
+	</header>
+
+	<div class="flex-container">
+		<div class="row">
+			<h3>
+				<div class="col-33"><a href="active" class="responsive">Sınıf içi Eğitimler</a> Lorem, ipsum dolor sit
+					amet consectetur adipisicing elit. Hic amet nam quisquam fuga, consequatur laboriosam magni
+					officiis, maiores illo voluptas numquam vitae rerum atque ratione autem quod totam sapiente
+					excepturi.</div>
+
+				<div class="col-33"><a href="active" class="responsive">Online Kurslar</a>Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Odio quos maxime, velit voluptas voluptate laboriosam eius atque iste
+					vero voluptates, error sequi repellat similique ea quod ipsum debitis nemo iusto?</div>
+
+				<div class="col-33"><a href="active" class="responsive">Konferanslar</a>Lorem ipsum dolor sit amet
+					consectetur
+					adipisicing elit. Odio quos maxime, velit voluptas voluptate laboriosam eius atque iste vero
+					voluptates, error sequi repellat similique ea quod ipsum debitis nemo iusto?</div>
+			</h3>
+		</div>
+	</div>
+	</div>
+
+
+	<!-- About -->
+	<br><br><br><br>
+	<section class="bg-light" id="FavAccounts">
+		<h2>MY FAVORITE YOUTUBE ACCOUNTS</h2>
+		<div class="container">
+			<div class="row">
+				<div class="flex-container">
+					<h4>
+						<p> Barış Özcan</p>
+						<p><br>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/bUFPiWaLv5E"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe><br>
+
+						<p> The Coding Train</p><br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/hWurN0XhzLY?start=6"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe><br>
+						</iframe>
+						<p> Yalin Kod
+						<p><br>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/_J_71MI9Zwc?start=1"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe><br>
+							</iframe>
+						</p>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<form action="/action_page.php">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">Contact Me</h2>
+				<hr class="dark my-4">
+
+				<label for="fullname">Full Name:</label><br>
+				<input type="text" id="fullname" name="fullname" placeholder="Cemile Ceren Bektaş"><br>
+				<label for="email">E-Mail:</label><br>
+				<input type="text" id="email" name="email" placeholder="ccb@eskisehir.edu.tr"><br>
+				<label for="message">Comments:</label><br>
+				<textarea name="message" rows="10" cols="30" >Please enter your ideas.</textarea>
+				<br><br>
+			</div>
+		</form>
+		<div class="center">
+			<button class="button" type="submit" value="Submit">Submit</button>
+		</div>
+	
+	</section>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
